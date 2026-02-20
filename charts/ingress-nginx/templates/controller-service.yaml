@@ -111,6 +111,10 @@ spec:
     {{- end }}
   {{- end }}
   selector:
+    {{- if .Values.controller.service.selectorLabelsOverride }}
+    {{ toYaml .Values.controller.service.selectorLabelsOverride | nindent 4 }}
+    {{- else }}
     {{- include "ingress-nginx.selectorLabels" . | nindent 4 }}
     app.kubernetes.io/component: controller
+    {{- end }}
 {{- end }}
