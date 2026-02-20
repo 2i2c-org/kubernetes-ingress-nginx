@@ -1,3 +1,12 @@
+# 2i2c's Fork of Ingress NGINX
+
+A temporary fork of the upstream ingress-nginx project, as we migrate without
+user disruption to nginx-ingress. See [https://github.com/2i2c-org/infrastructure/issues/7106](this issue)
+for deliberations and more information.
+
+---
+Original upstream README
+
 # Ingress NGINX Retirement
 
 ## Retiring
